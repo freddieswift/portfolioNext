@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +13,99 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+
+/* 
+--- 01 TYPOGRAPHY SYSTEM ---
+
+-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-FONT WEIGHT SYSTEM
+
+-LINE HEIGHT SYSTEM
+Default: 1
+
+--- 02 COLORS ---
+
+Primary: #007ACC
+Shade: #0062a3
+Tint: #e6f2fa
+
+Grey
+Dark: #333
+Light: #555
+
+--- 05 SHADOWS ---
+
+--- 06 BORDER RADUIS ---
+
+--- 07 WHITESPACE ---
+
+-Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+}
+
+button {
+  all: unset;
+}
+
+.headingPrimary {
+  font-size: 7.4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 1s;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #007acc;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #0062a3;
+}
+
+.ctaBtn {
+  font-size: 3rem;
+}
+
+.seeAllBtn {
+  font-size: 2.4rem;
+  margin: 4.8rem auto;
+}
+
+.formBtn {
+  background-color: #007acc;
+  font-size: 2rem;
 }

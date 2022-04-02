@@ -1,0 +1,9 @@
+.cardTag {
+  display: inline-block;
+  padding: 0.8rem;
+  background-color: #007acc;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-right: 0.4rem;
+}

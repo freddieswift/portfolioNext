@@ -1,0 +1,26 @@
+.contactMeForm > div > label {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.contactMeForm > div > input {
+  width: 100%;
+  border: none;
+  height: 3.6rem;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+}
+
+.contactMeForm > div > textarea {
+  width: 100%;
+  border: none;
+  height: 20rem;
+  margin-bottom: 1.2rem;
+  resize: none;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+}

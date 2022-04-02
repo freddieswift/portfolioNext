@@ -1,0 +1,19 @@
+.contactMeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactMeTitle {
+  font-size: 2.4rem;
+  padding-bottom: 1.6rem;
+}
+
+.contactMeDesc {
+  font-size: 1.8rem;
+  padding-bottom: 2.4rem;
+}
+
+.socialIcon {
+  width: 2.4rem;
+}
