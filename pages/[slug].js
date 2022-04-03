@@ -5,6 +5,7 @@ import getData from '../utils/getData';
 import qs from 'qs';
 
 const ProjectDetails = (props) => {
+    console.log(props.data)
     return (
         <>
             <Header />
