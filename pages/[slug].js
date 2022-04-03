@@ -2,10 +2,17 @@ import Header from '../components/sections/header/Header';
 import HeroSection from '../components/sections/hero/HeroSection';
 import ArticleContent from '../components/sections/articleContent/ArticleContent';
 import getData from '../utils/getData';
+import { useRouter } from 'next/router'
 import qs from 'qs';
 
 const ProjectDetails = (props) => {
-    console.log(props.data)
+
+    const router = useRouter()
+
+    if (router.isFallback) {
+        return <div>Loading...</div>
+    }
+
     return (
         <>
             <Header />
