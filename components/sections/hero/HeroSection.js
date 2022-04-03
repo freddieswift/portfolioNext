@@ -2,10 +2,10 @@ import classes from './HeroSection.module.css'
 import HeroContent from './HeroContent'
 import Section from '../../utils/section/Section'
 
-const HeroSection = () => {
+const HeroSection = (props) => {
     return (
         <Section className={classes.heroSection}>
-            <HeroContent />
+            <HeroContent heading={props.heading} description={props.description} mainHero={props.mainHero} />
         </Section>
     )
 }

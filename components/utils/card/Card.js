@@ -20,7 +20,7 @@ const Card = (props) => {
 
     return (
         <div className={classes.card} onClick={onClickHandler}>
-            <img src='/fast.jpg' alt='blog post cover' className={classes.cardImg} />
+            <img src={props.imageURL} alt='blog post cover' className={classes.cardImg} />
             <div className={classes.cardInfo}>
                 {tags}
                 <h3 className={classes.cardTitle}>{props.title}</h3>

@@ -5,6 +5,15 @@
   background-color: #e6f2fa;
 }
 
+.notHomePage {
+  padding-top: 0;
+}
+
+.seeAllBtnContainer {
+  padding-top: 2rem;
+  display: flex;
+}
+
 .infoText {
   font-size: 2rem;
 }

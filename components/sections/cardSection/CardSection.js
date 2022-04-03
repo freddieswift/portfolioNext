@@ -3,6 +3,7 @@ import Section from '../../utils/section/Section'
 import Card from '../../utils/card/Card'
 import classes from './CardSection.module.css'
 import Grid from '../../utils/grid/Grid'
+import Button from '../../utils/button/Button'
 
 const CardSection = (props) => {
     let cards
@@ -16,7 +17,7 @@ const CardSection = (props) => {
         }
         else {
             cards = props.data.map(element => {
-                return <Card title={element.title} description={element.description} slug={element.slug} key={element.slug} tags={element.tags.data} />
+                return <Card title={element.title} description={element.description} slug={element.slug} key={element.slug} tags={element.tags.data} imageURL={element.imageURL} />
             })
         }
     }
@@ -26,6 +27,11 @@ const CardSection = (props) => {
             <Grid gridLayout='grid3Col'>
                 {cards}
             </Grid>
+            {props.homePage &&
+                <div className={classes.seeAllBtnContainer}>
+                    <Button className='seeAllBtn' href={props.linkTo} btnText='See All'>See All</Button>
+                </div>
+            }
         </Section>
     )
 }

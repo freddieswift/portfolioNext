@@ -1,8 +1,8 @@
-// import './Button.css'
+import Link from "next/link"
 
 const Button = (props) => {
     return (
-        <a href={props.href} className={`btn ${props.className}`}>{props.btnText}</a>
+        <Link href={props.href}><div className={`btn ${props.className}`}>{props.btnText}</div></Link >
     )
 }
 
