@@ -10,7 +10,7 @@ const ProjectDetails = (props) => {
     const router = useRouter()
 
     if (router.isFallback) {
-        return <h1>Loading...</h1>
+        return <h2>Loading.....</h2>
     }
 
     return (
