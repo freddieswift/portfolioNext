@@ -6,10 +6,7 @@ import SyntaxHighlighter from '../../utils/syntaxHighlight/SyntaxHighlight'
 const ArticleContent = (props) => {
     return (
         <Section className={classes.articleContent}>
-            <ReactMarkdown
-                components={SyntaxHighlighter}
-                children={props.content}
-            />
+            <ReactMarkdown components={SyntaxHighlighter}>{props.content}</ReactMarkdown>
         </Section>
     )
 }
