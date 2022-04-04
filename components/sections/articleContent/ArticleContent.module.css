@@ -4,5 +4,20 @@
   padding: 0 2.4rem;
   margin-top: 5.2rem;
   margin-bottom: 5.2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+.markdown > * {
+  margin-bottom: 2rem;
+}
+
+.markdown > ol {
+  margin-left: 4rem;
+}
+
+.markdown img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }

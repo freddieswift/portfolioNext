@@ -24,7 +24,7 @@ const getData = async (url, params) => {
 
 
             if (element.attributes.image.data) {
-                dataObject.imageURL = process.env.BACKEND_BASE_URL + element.attributes.image.data[0].attributes.url
+                dataObject.imageURL = element.attributes.image.data[0].attributes.url
             }
             else {
                 dataObject.imageURL = '/fast.jpg'
