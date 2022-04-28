@@ -9,12 +9,15 @@ const AboutMeContent = () => {
                 <h2 className={classes.aboutMeHeading}>About Me</h2>
                 <p className={classes.aboutMeDesc}>
                     Hello, my name is Freddie and I am a Computer Science Graduate.
-                    I am now working as a Software Tester.
+                    I am now working as a Software Tester, based in the fantastic city of Manchester, UK.
                     <br /><br />
-                    I have an interest in all things development, as well as
-                    performance testing.
+                    I am passionate about all things development, as well as
+                    performance testing. Currently, I am learning Node.js and Express as I
+                    have a keen interest in backend development. In my spare time, you can
+                    normally find me coding, at the gym, or enjoying what Manchester has to offer
+                    food and drink wise!
                     <br /><br />
-                    Feel free to have a look around and check out my previous work!
+                    Feel free to have a look around and check out my previous projects!
                 </p>
             </div>
             <img className={classes.aboutMeImg} src='/profile-pic.png' alt='headshot of me' />

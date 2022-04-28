@@ -17,3 +17,7 @@
 .socialIcon {
   width: 2.4rem;
 }
+
+.socialLinks > a {
+  size: 20rem;
+}

@@ -1,7 +1,7 @@
 .articleContent {
   max-width: 90rem;
   margin: 0 auto;
-  padding: 0 2.4rem;
+  padding: 0 0.8rem;
   margin-top: 5.2rem;
   margin-bottom: 5.2rem;
   font-size: 1.8rem;
@@ -9,6 +9,10 @@
 
 .markdown > * {
   margin-bottom: 2rem;
+}
+
+.markdown > p {
+  line-height: 2rem;
 }
 
 .markdown > ol {
