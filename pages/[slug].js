@@ -72,6 +72,12 @@ export async function getStaticProps(context) {
 
     const data = await getData(process.env.BACKEND_API_URL + '/articles?', qs.stringify(params))
 
+    if (data.length === 0) {
+        return {
+            notFound: true,
+        }
+    }
+
     return {
         props: {
             data: JSON.parse(JSON.stringify(data))
