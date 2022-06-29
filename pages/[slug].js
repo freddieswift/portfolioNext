@@ -50,10 +50,8 @@ export async function getStaticPaths() {
         })
     }
 
-    console.log(paths)
-
     return {
-        fallback: true,
+        fallback: false,
         paths: paths
     }
 }
@@ -83,7 +81,8 @@ export async function getStaticProps(context) {
     return {
         props: {
             data: JSON.parse(JSON.stringify(data))
-        }
+        },
+        revalidate: 10
     }
 
 }
